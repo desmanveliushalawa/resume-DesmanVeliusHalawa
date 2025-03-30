@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Pribadi - Desman Velius Halawa</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Menghubungkan file CSS -->
+    <style>
+      /* Gaya dasar untuk seluruh halaman */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Container untuk menampung semua konten */
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #1180bc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      /* Tombol menu di pojok kiri atas */
+      .menu-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+        z-index: 1000;
+        transition: background 0.2s;
+      }
+      .menu-button:hover {
+        background: #0056b3;
+      }
+
+      /* Menu navigasi yang muncul saat tombol diklik */
+      .nav-menu {
+        position: fixed;
+        top: 60px;
+        left: 20px;
+        background: #007bff;
+        color: white;
+        padding: 10px;
+        border-radius: 4px;
+        display: none;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      }
+      .nav-menu a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin: 5px 0;
+        transition: color 0.2s;
+      }
+      .nav-menu a:hover {
+        color: #ff8400;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Tombol menu di pojok kiri atas -->
+    <button class="menu-button" onclick="toggleMenu()">DES Beranda</button>
+
+    <!-- Daftar Menu Navigasi -->
+    <div class="nav-menu" id="navMenu">
+      <a href="#identitas">Identitas</a>
+      <a href="#pengalaman">Pekerjaan</a>
+      <a href="#hobi">Hobi</a>
+      <a href="#help">Help</a>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="container">
+      <section id="identitas">
+        <h2>Identitas</h2>
+        <p>Nama: Desman Velius Halawa</p>
+        <p>Email: desmanhalawa2020@gmail.com</p>
+      </section>
+
+      <section id="pengalaman">
+        <h2>Pekerjaan</h2>
+        <p>Posisi: Data Scientist</p>
+      </section>
+
+      <section id="hobi">
+        <h2>Hobi</h2>
+        <p>Futsal, Musik, Membaca</p>
+      </section>
+
+      <section id="help">
+        <h2>Help</h2>
+        <p>Hubungi saya di email jika ada pertanyaan.</p>
+      </section>
+    </div>
+
+    <script>
+      // Fungsi untuk menampilkan/menyembunyikan menu
+      function toggleMenu() {
+        const menu = document.getElementById("navMenu");
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4; /* Warna latar belakang halaman */
+  color: #333; /* Warna teks default */
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff; /* Warna latar belakang konten */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  border-radius: 8px; /* Sudut melengkung */
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #2c3e50; /* Warna latar belakang header */
+  color: #ffffff; /* Warna teks header */
+  padding: 15px;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #2c3e50; /* Warna judul section */
+  border-bottom: 2px solid #3498db; /* Warna garis bawah judul */
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #ecf0f1; /* Warna latar belakang list item */
+  margin: 5px 0;
+  padding: 10px;
+  border-left: 5px solid #3498db; /* Warna border kiri */
+  border-radius: 4px;
+}
+
+.job,
+.intern {
+  background-color: #f9f9f9; /* Warna latar belakang kotak pekerjaan/magang */
+  padding: 15px;
+  margin: 15px 0;
+  border: 1px solid #ddd; /* Warna border kotak */
+  border-radius: 5px;
+}
+
+.job h3,
+.intern h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #2c3e50; /* Warna judul pekerjaan/magang */
+}
+
+.contact ul li,
+.skills ul li,
+.social-media ul li {
+  background-color: #ecf0f1; /* Warna latar belakang list item kontak/skills/sosmed */
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd; /* Warna border list item */
+  border-radius: 5px;
+}
